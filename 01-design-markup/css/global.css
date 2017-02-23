@@ -1,0 +1,912 @@
+@charset "UTF-8";
+/**
+ * =============================================================================
+ * Fonts
+ * =============================================================================
+ */
+/**
+ * Base font size (em base).
+ * As the name says, this value serves as base font size for every
+ * relative sizing needs.
+ * -----------------------------------------------------------------------------
+ */
+/**
+ * =============================================================================
+ * Responsive
+ * =============================================================================
+ */
+/**
+ * =============================================================================
+ * Colors
+ * =============================================================================
+ */
+/**
+ * =============================================================================
+ * Helpers
+ * =============================================================================
+ */
+/**
+ * =============================================================================
+ * Image replacement
+ * =============================================================================
+ */
+/**
+ * =============================================================================
+ * Truncate (3 dot cut text)
+ * =============================================================================
+ */
+/**
+ * =============================================================================
+ * Hover and focus
+ * =============================================================================
+ */
+/**
+ * =============================================================================
+ * Border radius
+ * =============================================================================
+ */
+/**
+ * =============================================================================
+ * Box shadow
+ * =============================================================================
+ */
+/**
+ * =============================================================================
+ * Rotate
+ * =============================================================================
+ */
+/**
+ * =============================================================================
+ * Animation
+ * =============================================================================
+ */
+/**
+ * =============================================================================
+ * Opacity
+ * =============================================================================
+ */
+/**
+ * Always convert pixel values to em values with 16px as em base.
+ * Useful when you've defined different em base for the whole project
+ * but want your media queries in ems (since they *always* take 16px as base).
+ */
+/**
+ * Return value in pixels.
+ * Useful when you have numbers as variables and don’t want to bother with
+ * concatenation of strings.
+ */
+/*! normalize.css v2.1.3 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background: transparent;
+}
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+  outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+pre {
+  white-space: pre-wrap;
+}
+
+/**
+ * Set consistent quote types.
+ */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/**
+ * =============================================================================
+ * Reset
+ * =============================================================================
+ */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /*behavior: url(/javascript/boxsizing.htc);*/
+}
+
+blockquote, dl, dd, h1, h2, h3, h4, h5, h6, p, pre {
+  margin: 0;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*html                        { font-size: 1em; line-height: 1; }*/
+ol, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+label[for] {
+  cursor: pointer;
+}
+
+textarea {
+  resize: vertical;
+}
+
+iframe {
+  border: 0;
+}
+
+::-webkit-input-placeholder {
+  color: #252525;
+  opacity: 1;
+}
+
+:-moz-placeholder {
+  color: #252525;
+  opacity: 1;
+}
+
+::-moz-placeholder {
+  color: #252525;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #252525;
+  opacity: 1;
+}
+
+/*html                        { font: 100%/1.5 'museo-sans', 'Open Sans', Arial, Tahoma, Helvetica, sans-serif; font-weight: 400; }*/
+html, body {
+  height: 100%;
+}
+
+body {
+  word-wrap: break-word;
+}
+
+abbr {
+  font-variant: small-caps;
+}
+
+dl dd {
+  margin-left: 0;
+}
+
+ul ul, ol ol {
+  list-style-type: none;
+}
+
+/**
+ * =============================================================================
+ * Core
+ * =============================================================================
+ */
+html {
+  font-size: 85.7142857143%;
+}
+
+body {
+  background-color: #fff;
+  color: #222;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.Container {
+  height: 100vh;
+  min-height: 480px;
+  min-width: 320px;
+  position: relative;
+}
+
+.Button {
+  -webkit-transition: background-color 0.2s;
+  -moz-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+  background-color: #ebeced;
+  color: #555555;
+  display: block;
+  font-weight: 300;
+  font-size: 1em;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 14px;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
+.Button--noTextTransform {
+  text-transform: none;
+}
+
+.Button:hover, .Button:focus {
+  background-color: #dedfe1;
+  outline: 0;
+}
+
+.Button--action {
+  background-color: #fec80b;
+}
+
+.Button--action:hover, .Button--action:focus {
+  background-color: #efba01;
+  outline: 0;
+}
+
+.Button-wrapIconBack {
+  display: inline-block;
+  margin-right: 3px;
+  vertical-align: middle;
+}
+
+.Button--iconOnHover {
+  padding-left: 30px;
+  padding-right: 30px;
+  position: relative;
+}
+
+.Button--iconOnHover .Button-wrapIconBack {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: opacity 0.1s;
+  -moz-transition: opacity 0.1s;
+  transition: opacity 0.1s;
+  opacity: 0;
+  margin-right: 0;
+}
+
+.Button--iconOnHover:hover, .Button--iconOnHover:focus {
+  outline: 0;
+}
+
+.Button--iconOnHover:hover .Button-wrapIconBack, .Button--iconOnHover:focus .Button-wrapIconBack {
+  opacity: 1;
+}
+
+.Card {
+  padding: 20px;
+}
+
+.Card-front, .Card-back {
+  background-color: #fff;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.Card-image {
+  background: url(../images/01.jpg) no-repeat 0 0/cover;
+  padding-top: 100%;
+}
+
+.Card-data {
+  padding: 15px;
+  position: relative;
+}
+
+.Card-wrapText {
+  margin-top: 15px;
+}
+
+.Card-wrapButtonGroup {
+  margin-top: 10px;
+}
+
+.Card-wrapSticker {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: -1;
+}
+
+.Title {
+  color: #009ab7;
+  font-size: 1.5em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.Title--medium {
+  font-size: 1.8333333333em;
+  font-weight: 700;
+}
+
+.Title-strong {
+  font-size: 1.5555555556em;
+  font-weight: 700;
+}
+
+.Text h2,
+.Text h3 {
+  font-size: 1.1666666667em;
+  font-weight: 700;
+  margin-top: 7px;
+  text-transform: uppercase;
+}
+
+.Text h2:first-child,
+.Text h3:first-child {
+  margin-top: 0;
+}
+
+.Text h2 + p,
+.Text h3 + p {
+  margin-top: 2px;
+}
+
+.Text p {
+  font-size: 1.1666666667em;
+  font-weight: 300;
+  line-height: 1.4285714286;
+}
+
+.Text h3 {
+  text-transform: none;
+}
+
+.Text--alt p {
+  font-size: 1em;
+}
+
+.ButtonGroup {
+  margin-left: -7px;
+}
+
+.ButtonGroup:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.ButtonGroup-item {
+  float: left;
+  padding-left: 7px;
+  width: 50%;
+}
+
+.ButtonGroup-item--upRight {
+  float: right;
+}
+
+.ButtonGroup-item--auto {
+  width: auto !important;
+}
+
+.Sticker {
+  height: 110px;
+  width: 110px;
+  position: relative;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.Sticker-inner {
+  background-color: #fcc80e;
+  background-image: -webkit-linear-gradient(#fcc80e, #fdca02);
+  background-image: linear-gradient(#fcc80e, #fdca02);
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  -webkit-transform: translate(-30%, -25%) rotate(43deg);
+  -moz-transform: translate(-30%, -25%) rotate(43deg);
+  -ms-transform: translate(-30%, -25%) rotate(43deg);
+  -o-transform: translate(-30%, -25%) rotate(43deg);
+  transform: translate(-30%, -25%) rotate(43deg);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+  color: #000;
+  display: block;
+  font-size: 2em;
+  font-weight: 700;
+  padding: 6px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 200px;
+}
+
+.IconBack {
+  background: url(../images/arrows.svg);
+  background-size: 15px 12px;
+  display: block;
+  height: 12px;
+  width: 15px;
+}
+
+@media screen and (max-width: 37.4375em) {
+  .Card-back {
+    display: none;
+  }
+  .Card:target .Card-front {
+    display: none;
+  }
+  .Card:target .Card-back {
+    display: block;
+  }
+  .ButtonGroup-item--downFull {
+    width: 100%;
+    float: none;
+    margin-bottom: 7px;
+  }
+}
+
+@media screen and (min-width: 37.5em) {
+  html {
+    font-size: 75%;
+  }
+  .Card {
+    -webkit-perspective: 680px;
+    -moz-perspective: 680px;
+    perspective: 680px;
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    left: 0px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding: 0 20px;
+  }
+  .Card:target .Card-flip {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+  .Card-flip {
+    -webkit-transition: transform 0.6s;
+    -moz-transition: transform 0.6s;
+    transition: transform 0.6s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    max-width: 680px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .Card-front, .Card-back {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    width: 100%;
+  }
+  .Card-back {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+  }
+  .Card-front {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    z-index: 2;
+    display: table;
+  }
+  .Card-image, .Card-data {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .Card-image {
+    padding-top: 0;
+    width: 30%;
+  }
+  .Text--alt {
+    position: relative;
+  }
+  .Text--alt:before {
+    background-color: rgba(255, 255, 255, 0);
+    background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), #fff);
+    background-image: linear-gradient(rgba(255, 255, 255, 0), #fff);
+    position: absolute;
+    right: 17px;
+    bottom: 0px;
+    left: 0px;
+    content: '';
+    height: 35px;
+    pointer-events: none;
+  }
+  .Text .Text-scroll {
+    max-height: 104px;
+    overflow-y: auto;
+    padding: 0 17px 0 0;
+  }
+  .Text .Text-inner {
+    padding-bottom: 20px;
+  }
+  .Button {
+    padding: 8px 10px;
+  }
+  .ButtonGroup--alt {
+    padding-right: 35%;
+  }
+  .ButtonGroup-item {
+    width: 33.3333333333%;
+  }
+}
+
+/*# sourceMappingURL=global.css.map */

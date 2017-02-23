@@ -1,0 +1,354 @@
+/**
+ * =============================================================================
+ * Core
+ * =============================================================================
+ */
+
+html,
+body {
+    // height: 100%;
+}
+
+html {
+    font-size: percentage($em-base/14);
+}
+
+body {
+    background-color: $color-white;
+    color: $color-text;
+    font-family: $font-alpha;
+}
+
+a {
+    text-decoration: none;
+}
+
+.Container {
+    height: 100vh;
+    min-height: 480px;
+    min-width: 320px;
+    position: relative;
+}
+
+.Button {
+    @include transition(background-color 0.2s);
+    background-color: $color-gray;
+    color: lighten($color-text,20%);
+    display: block;
+    font-weight: 300;
+    font-size: em(12);
+    text-align: center;
+    text-transform: uppercase;
+    padding: 14px 10px;
+
+    // Truncate
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+
+    &--noTextTransform {
+        text-transform: none;
+    }
+
+    @include hover {
+        background-color: darken($color-gray,5%);
+    }
+
+    &--action {
+        background-color: $color-action;
+
+        @include hover {
+            background-color: darken($color-action,5%);
+        }
+    }
+
+    &-wrapIconBack {
+        display: inline-block;
+        margin-right: 3px;
+        vertical-align: middle;
+    }
+}
+
+.Button--iconOnHover {
+    padding-left: 30px;
+    padding-right: 30px;
+    position: relative;
+
+
+    .Button-wrapIconBack {
+        @include position(absolute, 50% null null 15px);
+        @include transform(translateY(-50%));
+        @include transition(opacity 0.1s);
+        opacity: 0;
+        margin-right: 0;
+    }
+
+    @include hover {
+
+        .Button-wrapIconBack {
+            opacity: 1;
+        }
+    }
+}
+
+.Card {
+    padding: 20px;
+
+    &-front,
+    &-back {
+        background-color: $color-white;
+        box-shadow: 0 0 4px rgba(0,0,0,0.2);
+    }
+
+    &-image {
+        background: url(../images/01.jpg) no-repeat 0 0 / cover;
+        padding-top: 100%;
+    }
+
+    &-data {
+        padding: 15px;
+        position: relative;
+    }
+
+    &-wrapText {
+        margin-top: 15px;
+    }
+
+    &-wrapButtonGroup {
+        margin-top: 10px;
+    }
+
+    &-wrapSticker {
+        @include position(absolute, 0px 0px null null);
+        z-index: -1;
+    }
+}
+
+.Title {
+    color: $color-brand;
+    font-size: em(18);
+    font-weight: 400;
+    text-transform: uppercase;
+
+    &--medium {
+        font-size: em(22);
+        font-weight: 700;
+    }
+
+    &-strong {
+        font-size: em(28,18);
+        font-weight: 700;
+    }
+}
+
+.Text {
+
+    h2,
+    h3 {
+        font-size: em(14);
+        font-weight: 700;
+        margin-top: 7px;
+        text-transform: uppercase;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        + p {
+            margin-top: 2px;
+        }
+    }
+
+    p {
+        font-size: em(14);
+        font-weight: 300;
+        line-height: (20/14);
+    }
+
+    h3 {
+        text-transform: none;
+    }
+
+    &--alt {
+
+        p {
+            font-size: em(12);
+        }
+    }
+}
+
+.ButtonGroup {
+    @include clearfix;
+    margin-left: -7px;
+
+    &-item {
+        float: left;
+        padding-left: 7px;
+        width: percentage(1/2);
+    }
+
+    &-item--upRight {
+        float: right;
+    }
+
+    &-item--auto {
+        width: auto !important;
+    }
+}
+
+.Sticker {
+    height: 110px;
+    width: 110px;
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+
+    &-inner {
+        @include linear-gradient(#fcc80e, #fdca02);
+        @include position(absolute, 25% null null 30%);
+        @include transform(translate(-30%, -25%) rotate(43deg));
+        box-shadow: 0 3px 3px rgba(0,0,0,0.1);
+        color: $color-black;
+        display: block;
+        font-size: em(24);
+        font-weight: 700;
+        padding: 6px;
+        text-transform: uppercase;
+        text-align: center;
+        width: 200px;
+    }
+}
+
+.IconBack {
+    background: url(../images/arrows.svg);
+    background-size: 15px 12px;
+    display: block;
+    height: 12px;
+    width: 15px;
+}
+
+
+@media screen and (max-width:mq-em($bp-alpha - 1)) {
+
+    .Card {
+
+        &-back {
+            display: none;
+        }
+
+        &:target {
+
+            .Card-front {
+                display: none;
+            }
+            .Card-back {
+                display: block;
+            }
+        }
+    }
+
+    .ButtonGroup-item--downFull {
+        width: 100%;
+        float: none;
+        margin-bottom: 7px;
+    }
+}
+
+@media screen and (min-width:mq-em($bp-alpha)) {
+
+    html {
+        font-size: percentage($em-base/16);
+    }
+
+    .Card {
+        @include perspective(680px);
+        @include position(absolute, 50% 0px null 0px);
+        @include transform(translateY(-50%));
+        padding: 0 20px;
+
+        &:target {
+
+            .Card-flip {
+                @include transform(rotateY(180deg));
+            }
+        }
+
+        &-flip {
+            @include transition(transform 0.6s);
+            @include transform-style(preserve-3d);
+            max-width: 680px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        &-front,
+        &-back {
+            @include backface-visibility(hidden);
+            width: 100%;
+        }
+
+        &-back {
+            @include transform(rotateY(180deg));
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+        }
+
+        &-front {
+            @include transform(rotateY(0deg));
+            z-index: 2;
+            display: table;
+        }
+
+        &-image,
+        &-data {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        &-image {
+            padding-top: 0;
+            width: 30%;
+        }
+    }
+
+    .Text {
+
+        &--alt {
+            position: relative;
+
+            &:before {
+                @include linear-gradient(rgba(255,255,255,0), #fff);
+                @include position(absolute, null 17px 0px 0px);
+                content: '';
+                height: 35px;
+                pointer-events: none;
+            }
+        }
+
+        .Text-scroll {
+            max-height: 104px;
+            overflow-y: auto;
+            padding: 0 17px 0 0;
+        }
+
+        .Text-inner {
+            padding-bottom: 20px;
+        }
+    }
+
+    .Button {
+        padding: 8px 10px;
+    }
+
+    .ButtonGroup--alt {
+        padding-right: 35%;
+    }
+
+    .ButtonGroup-item {
+        width: percentage(1/3);
+    }
+}

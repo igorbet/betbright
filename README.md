@@ -5,7 +5,7 @@
 01-design-markup
 
 Used:
-- (SUIT CSS naming conventions)[https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md]
+- [SUIT CSS naming conventions](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md)
 - SASS/Grunt
 
 There are the following differences:

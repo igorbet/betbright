@@ -38,19 +38,10 @@
                     continue;
                 }
 
-                // echo '<pre>';
-                // var_dump($next_date);
-                // echo '</pre>';
-
-                // if(!isset($min_date) || $next_date <= $min_date) {
                 if(!isset($min_date) || $next_date < $min_date) {
                     $min_date = $next_date;
                 }
-                // } else {
-                //     echo '<pre>';
-                //     var_dump($min_date->diff($next_date));
-                //     echo '</pre>';
-                // }
+
             }
 
             return $min_date->format('d-m-Y H:i');
